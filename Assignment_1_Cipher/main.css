@@ -1,0 +1,897 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(92, 88, 88);
+}
+
+.nav{
+    background-color: rgb(66, 65, 63);
+    height: 50px;
+}
+
+.nav ul{
+    margin: 0px;
+    padding: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 0px;
+}
+.nav ul li a{
+    text-decoration: none;
+    line-height: 10px;
+    display: block;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav ul li:hover{
+    background-color: rgb(43, 42, 42);
+    font-size: 20px;
+}
+/* *********Home************** */
+.home{
+   position: relative;
+   text-align: center;
+   
+}
+
+img{
+    width: 100%;
+    height: 510px;
+}
+
+.name{
+    display: flex;
+    position: absolute;
+  bottom: 300px;
+  right: 460px;
+  color: rgb(90, 87, 87);
+  /* background-color: black; */
+  color: white;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.prof{
+    position: absolute;
+    bottom: 240px;
+    right: 350px;
+    color: rgb(90, 87, 87);
+    /* background-color: black; */
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 45px;
+}
+
+/* ****About Section********** */
+
+
+.aboutSection{
+    background-color: rgb(49, 49, 49);
+    padding: 100px 7px;
+
+}
+
+.aboutSection .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.aboutSection .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.aboutSection .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.aboutSection .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.aboutSection .about-content .aboutme{
+    padding-left: 200px;
+    
+}
+
+.aboutSection .about-content .aboutme h1{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.aboutSection .about-content .aboutme h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.aboutSection .about-content .aboutme p{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.aboutSection .about-content .aboutobjective{
+    padding-left: 200px;
+
+}
+
+.aboutSection .about-content .aboutobjective h2{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.aboutSection .about-content .aboutobjective p{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.aboutSection .about-content .btn{
+    padding-left: 200px;
+}
+
+.aboutSection .about-content #btn{
+    height: 50px;
+    width: 270px;
+    font-size: 22px;
+    background-color: rgb(247, 210, 47);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* EDUCATION SECTION */
+.educationSection{
+    background-color: rgb(63, 63, 63);
+    padding: 100px 7px;
+
+}
+
+.educationSection .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.educationSection .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.educationSection .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.educationSection .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.educationSection .education-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.educationSection .education-content{
+    margin: 40px;
+    padding: 20px;
+    
+}
+
+.educationSection .education-content .box{
+    background-color: #2b2626;
+    padding: 30px;
+    flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20%);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.educationSection .education-content .box::before{
+    content: '';
+    height: 2px;
+    background-attachment: #fedb01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.educationSection .education-content .box:hover::before{
+    width: 100%;
+}
+
+.educationSection .education-content .box .icon{
+    height: 60px;
+    width: 60px;
+    /* background-color: #febd01; */
+    margin: 15px auto 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.educationSection .education-content .box .fa{
+    font-size: 25px
+    color #ffffff;
+    line-height: 60px;
+}
+
+.educationSection .education-content .box h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+.educationSection .education-content .box h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(168, 167, 167);
+    margin: 0;
+}
+
+.educationSection .education-content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: rgb(201, 201, 121);
+    margin: 10px 0 10px;
+}
+
+/* technical Section */
+
+.technical-skills{
+    background-color: rgb(70, 68, 68);
+    padding: 100px 7px;
+
+}
+
+.technical-skills .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.technical-skills .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.technical-skills .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.technical-skills .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.technical-skills .box{
+    background-color: #2b2626;
+    padding: 30px;
+    flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20%);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.technical-skills .skills-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 30px;
+}
+
+.technical-skills .skills-content .box{
+   
+    height: 80px;
+    width: 30%;
+    margin: 0 20px;
+    background: rgb(48, 48, 48);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+}
+
+.technical-skills .skills-content .box h1{
+    color: white;
+}
+
+/* Interpersonal Skills */
+.interpersonal-skills {
+    background-color: rgb(122, 118, 118);
+    padding: 100px 7px;
+}
+
+.interpersonal-skills .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.interpersonal-skills .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.interpersonal-skills .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.interpersonal-skills .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* .interpersonal-skills .box{
+    background-color: #2b2626;
+    padding: 30px;
+    flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20%);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+} */
+
+.interpersonal-skills .skills-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 30px;
+}
+
+.interpersonal-skills .skills-content .box{
+    height: 80px;
+    width: 30%;
+    margin: 0 20px;
+    background: rgb(48, 48, 48);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+}
+
+.interpersonal-skills .skills-content .box h1{
+    color: white;
+}
+
+
+/* Language Section */
+
+.language-skills {
+    background-color: rgb(49, 48, 48);
+    padding: 100px 7px;
+}
+
+.language-skills .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.language-skills .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.language-skills .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.language-skills .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* .interpersonal-skills .box{
+    background-color: #2b2626;
+    padding: 30px;
+    flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20%);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+} */
+
+.language-skills .language-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 30px;
+}
+
+.language-skills .language-content .box{
+    background-color: #2b2626;
+     padding: 10px;
+    /*flex: 0 0 calc(33.33%-20px);
+    max-width: calc(33.33%-20%); */
+    width: 40%;
+    margin: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: rgb(228, 180, 23);
+    
+}
+
+.language-skills .language-content .box h1{
+    color: white;
+
+}
+
+/* Project Section */
+
+
+.projectSection{
+    background-color: rgb(110, 109, 109);
+    padding: 100px 7px;
+
+}
+
+.projectSection .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.projectSection .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.projectSection .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.projectSection .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.projectSection .project-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.projectSection .project-content .box{
+    height: 280px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: rgb(48, 48, 48);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+
+
+}
+
+.projectSection .project-content .box h1{
+    text-align: center;
+}
+.projectSection .project-content .box h2{
+    text-align: center;
+}
+.projectSection .project-content .box p{
+    text-align: center;
+}
+
+.projectSection .project-content .box:hover{
+    height: 300px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.projectSection .project-content .box::before{
+    content: '';
+    height: 2px;
+    background-attachment: #fedb01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.projectSection .project-content .box:hover::before{
+    width: 100%;
+}
+
+.projectSection .project-content .box .icon{
+    height: 60px;
+    width: 60px;
+    /* background-color: #febd01; */
+    margin: 15px auto 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.projectSection .project-content .box .fa{
+    font-size: 25px
+    color #ffffff;
+    line-height: 60px;
+}
+
+.projectSection .project-content .box h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+.projectSection .project-content .box h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(168, 167, 167);
+    margin: 0;
+}
+
+.projectSection .project-content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: rgb(201, 201, 121);
+    margin: 10px 0 10px;
+}
+
+
+/* Certification Section */
+
+.certificationSection{
+    background-color: rgb(58, 58, 58);
+    padding: 100px 7px;
+
+}
+
+.certificationSection .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.certificationSection .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.certificationSection .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.certificationSection .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.certificationSection .certificate-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.certificationSection .certificate-content .box{
+    height: 200px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: rgb(48, 48, 48);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+
+
+}
+
+.certificationSection .certificate-content .box h1{
+    text-align: center;
+}
+.certificationSection .certificate-content .box h2{
+    text-align: center;
+}
+.certificationSection .certificate-content .box p{
+    text-align: center;
+}
+
+.certificationSection .certificate-content .box:hover{
+    height: 230px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.certificationSection .certificate-content .box::before{
+    content: '';
+    height: 2px;
+    background-attachment: #fedb01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.certificationSection .certificate-content .box:hover::before{
+    width: 100%;
+}
+
+
+.certificationSection .certificate-content .box h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(240, 208, 66);
+    margin: 0;
+}
+.certificationSection .certificate-content .box h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.certificationSection .certificate-content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: white;
+    margin: 10px 0 10px;
+}
+
+
+/* Contact Section */
+
+
+.contactSection{
+    background-color: rgb(37, 37, 37);
+    padding: 100px 7px;
+
+}
+
+.contactSection .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.contactSection .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(247, 216, 77);
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.contactSection .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.contactSection .section-title h1:before{
+    left: 30%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.contactSection .contact-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contactSection .contact-content .box h1{
+    text-align: center;
+    color: white;
+}
+
+.contactSection .contact-content .box h2{
+    text-align: center;
+    color: white;
+}
+
+.contactSection .contact-content .box h3{
+    text-align: center;
+    color: white;
+}
+
+.contactSection .contact-content .box:hover{
+    height: 150px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.contactSection .contact-content .box::before{
+    content: '';
+    height: 2px;
+    background-attachment: #fedb01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+
+}
+
+.contact-content .contact-content .box{
+    height: 200px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: rgb(48, 48, 48);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid;
+
+}
