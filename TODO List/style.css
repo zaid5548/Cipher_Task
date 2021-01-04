@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(113, 168, 168);
+}
+.container{
+    background-color: rgb(122, 103, 78);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container h1{
+    text-align: center;    
+}
+
+#todo{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+li{
+    list-style: none;
+    background-color: rgb(138, 88, 185);
+    height: 120px;
+    width: 80%;
+    display: flex;
+    margin: 10px;
+    display: flex;
+}
+li p{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+li button{
+    padding: 5px;
+    margin: 10px;
+    height: 25px;
+    background-color: red;
+    margin-left: auto;
+    margin-top: 5px;
+}
